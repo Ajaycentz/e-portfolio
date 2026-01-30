@@ -31,6 +31,9 @@ export function ContactForm() {
     "idle"
   );
 
+  const encode = (data: Record<string, string>) =>
+    new URLSearchParams(data).toString();
+
   const validate = () => {
     const nextErrors: Record<string, string> = {};
     if (!form.name.trim()) nextErrors.name = "Name is required";
@@ -47,10 +50,14 @@ export function ContactForm() {
     setStatus("loading");
 
     try {
-      const response = await fetch("/api/inquiries", {
+      const response = await fetch("/", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": "contact",
+          "bot-field": "",
+          ...form,
+        }),
       });
       if (!response.ok) throw new Error("Failed to send");
       setStatus("success");
@@ -61,7 +68,16 @@ export function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      onSubmit={handleSubmit}
+      className="space-y-6"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="bot-field" />
       <div className="grid gap-4 md:grid-cols-2">
         <label className="space-y-2 text-sm text-white/70">
           Name
