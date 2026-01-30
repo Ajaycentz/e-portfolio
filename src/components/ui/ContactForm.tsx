@@ -50,7 +50,7 @@ export function ContactForm() {
     setStatus("loading");
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
@@ -62,6 +62,7 @@ export function ContactForm() {
       if (!response.ok) throw new Error("Failed to send");
       setStatus("success");
       setForm({ name: "", email: "", service: "", budget: "", message: "" });
+      window.location.href = "/thank-you";
     } catch (error) {
       setStatus("error");
     }
@@ -71,9 +72,6 @@ export function ContactForm() {
     <form
       name="contact"
       method="POST"
-      action="/thank-you"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
       className="space-y-6"
     >
