@@ -71,6 +71,7 @@ export function ContactForm() {
     <form
       name="contact"
       method="POST"
+      action="/thank-you"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
