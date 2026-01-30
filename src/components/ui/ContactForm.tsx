@@ -31,9 +31,6 @@ export function ContactForm() {
     "idle"
   );
 
-  const encode = (data: Record<string, string>) =>
-    new URLSearchParams(data).toString();
-
   const validate = () => {
     const nextErrors: Record<string, string> = {};
     if (!form.name.trim()) nextErrors.name = "Name is required";
@@ -44,34 +41,21 @@ export function ContactForm() {
     return Object.keys(nextErrors).length === 0;
   };
 
-  const handleSubmit = async (event: FormEvent) => {
-    event.preventDefault();
-    if (!validate()) return;
-    setStatus("loading");
-
-    try {
-      const response = await fetch("/__forms.html", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({
-          "form-name": "contact",
-          "bot-field": "",
-          ...form,
-        }),
-      });
-      if (!response.ok) throw new Error("Failed to send");
-      setStatus("success");
-      setForm({ name: "", email: "", service: "", budget: "", message: "" });
-      window.location.href = "/thank-you";
-    } catch (error) {
-      setStatus("error");
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    if (!validate()) {
+      event.preventDefault();
+      return;
     }
+    setStatus("loading");
   };
 
   return (
     <form
       name="contact"
       method="POST"
+      action="/thank-you"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
       className="space-y-6"
     >
