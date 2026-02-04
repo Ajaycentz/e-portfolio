@@ -47,24 +47,30 @@ export function ContactForm() {
       return;
     }
     setStatus("loading");
+    window.setTimeout(() => {
+      setStatus("success");
+      window.location.href = "/thank-you";
+    }, 600);
   };
 
   return (
     <form
-      name="contact"
       method="POST"
-      action="/thank-you"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSc07ObWQmBZeMaV_ng6kakW89oKE5QEtyyn1cj8ycM5vZ8zHw/formResponse"
+      target="hidden_iframe"
       onSubmit={handleSubmit}
       className="space-y-6"
     >
-      <input type="hidden" name="form-name" value="contact" />
-      <input type="hidden" name="bot-field" />
+      <iframe
+        name="hidden_iframe"
+        title="hidden_iframe"
+        className="hidden"
+      />
       <div className="grid gap-4 md:grid-cols-2">
         <label className="space-y-2 text-sm text-white/70">
           Name
           <input
+            name="entry.1818995754"
             value={form.name}
             onChange={(event) =>
               setForm((prev) => ({ ...prev, name: event.target.value }))
@@ -78,6 +84,7 @@ export function ContactForm() {
         <label className="space-y-2 text-sm text-white/70">
           Email
           <input
+            name="entry.487429469"
             value={form.email}
             onChange={(event) =>
               setForm((prev) => ({ ...prev, email: event.target.value }))
@@ -93,6 +100,7 @@ export function ContactForm() {
         <label className="space-y-2 text-sm text-white/70">
           Service Needed
           <select
+            name="entry.1077734351"
             value={form.service}
             onChange={(event) =>
               setForm((prev) => ({ ...prev, service: event.target.value }))
@@ -113,6 +121,7 @@ export function ContactForm() {
         <label className="space-y-2 text-sm text-white/70">
           Budget Range
           <select
+            name="entry.300372339"
             value={form.budget}
             onChange={(event) =>
               setForm((prev) => ({ ...prev, budget: event.target.value }))
@@ -131,6 +140,7 @@ export function ContactForm() {
       <label className="space-y-2 text-sm text-white/70">
         Message
         <textarea
+          name="entry.1929040440"
           value={form.message}
           onChange={(event) =>
             setForm((prev) => ({ ...prev, message: event.target.value }))
