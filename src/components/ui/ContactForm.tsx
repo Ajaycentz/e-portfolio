@@ -4,10 +4,11 @@ import { useState, type FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 
 const budgets = [
-  "$1k - $3k",
-  "$3k - $6k",
-  "$6k - $10k",
-  "$10k+",
+  "₱1500-₱3000",
+  "₱3500-₱7000",
+  "₱7500-₱12000",
+  "₱15-000-₱20000",
+  "₱25000-₱50000",
 ];
 
 const services = [

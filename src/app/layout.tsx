@@ -20,10 +20,30 @@ const manrope = Manrope({
   weight: ["300", "400", "500", "600", "700"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://jaycentz.netlify.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Alden Jay Centino | Graphic Designer",
   description:
     "Graphic design portfolio for Alden Jay Centino featuring brand visuals, social creatives, and print design.",
+  openGraph: {
+    title: "Alden Jay Centino | Graphic Designer",
+    description:
+      "Graphic design portfolio for Alden Jay Centino featuring brand visuals, social creatives, and print design.",
+    url: siteUrl,
+    siteName: "Alden Jay Centino Portfolio",
+    type: "website",
+    images: ["/prof.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Alden Jay Centino | Graphic Designer",
+    description:
+      "Graphic design portfolio for Alden Jay Centino featuring brand visuals, social creatives, and print design.",
+    images: ["/prof.jpg"],
+  },
 };
 
 export default function RootLayout({
