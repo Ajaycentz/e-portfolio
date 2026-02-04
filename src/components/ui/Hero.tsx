@@ -194,8 +194,11 @@ export function Hero() {
             />
             <motion.div
               className="relative p-2"
-              whileHover={{ rotate: 0.8, scale: 1.015 }}
-              transition={{ type: "spring", stiffness: 120, damping: 16 }}
+              whileHover={{
+                rotate: 0.8,
+                scale: 1.015,
+                transition: { type: "spring", stiffness: 120, damping: 16 },
+              }}
               animate={{ y: [0, -6, 0] }}
               transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
             >
