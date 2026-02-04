@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Contact | Alden Jay Centino",
     description:
       "Start a project with Alden Jay Centino. Response within 24-48 hours.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 

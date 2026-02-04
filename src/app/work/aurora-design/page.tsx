@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Aurora Brand System | Alden Jay Centino",
     description: "Aurora gallery.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 

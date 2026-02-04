@@ -37,7 +37,7 @@ export function generateMetadata({
       openGraph: {
         title: "Project | Alden Jay Centino",
         description: "Project details from Alden Jay Centino's portfolio.",
-        images: ["/Profile.jpg"],
+        images: ["/prof.jpg"],
       },
     };
   }
@@ -150,7 +150,7 @@ export default function WorkDetailPage({ params }: { params: { slug: string } })
             <div className="glass rounded-3xl p-6">
               <h3 className="font-display text-2xl">Start a project</h3>
               <p className="mt-3 text-sm text-white/70">
-                Ready for a new collaboration? Let us craft something bold.
+                Ready for a new collaboration? Let's craft something bold.
               </p>
               <Link
                 href="/contact"

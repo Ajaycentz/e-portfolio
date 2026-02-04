@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Lumen Studio Digital Portfolio | Alden Jay Centino",
     description: "Lumen Studio Digital Portfolio gallery.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 

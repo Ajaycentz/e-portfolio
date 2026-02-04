@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Services | Alden Jay Centino",
     description:
       "Creative packages for brand identity, social creatives, and print systems.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 

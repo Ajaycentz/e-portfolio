@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Neon Market Posters | Alden Jay Centino",
     description: "Neon Market Posters gallery.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 

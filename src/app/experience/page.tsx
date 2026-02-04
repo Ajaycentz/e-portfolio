@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Experience | Alden Jay Centino",
     description:
       "Creative experience timeline including graphic design, web design, video editing, and digital support roles.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 

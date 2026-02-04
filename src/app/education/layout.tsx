@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: "Education | Alden Jay Centino",
     description:
       "Academic background in information technology, web applications, and honors education.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 

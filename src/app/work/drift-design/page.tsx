@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Drift Commerce Visual System | Alden Jay Centino",
     description: "Drift Commerce Visual System gallery.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 

@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "About | Alden Jay Centino",
     description:
       "Graphic designer specializing in brand identity, social creatives, and print systems.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 
@@ -250,7 +250,7 @@ export default function AboutPage() {
             </div>
             <div className="mt-6 flex flex-wrap items-center gap-4">
               <Link
-                href="/cv.pdf"
+                href="/Centino%20Alden%20Jay%20Cv%20(2026).pdf"
                 className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-xs uppercase tracking-[0.3em] transition hover:border-white/40 hover:text-white"
               >
                 <Sparkles className="h-4 w-4 text-emerald-300" />

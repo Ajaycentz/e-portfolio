@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Furniture Design | Alden Jay Centino",
     description: "Furniture Design project preview gallery.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 

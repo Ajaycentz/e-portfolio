@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Logo Brands | Alden Jay Centino",
     description: "Logo Brands gallery.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 

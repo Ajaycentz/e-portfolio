@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Alden Jay Centino | Graphic Designer Portfolio",
     description:
       "Graphic designer focused on brand visuals, social creatives, and print design.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 

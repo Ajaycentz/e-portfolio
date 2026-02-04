@@ -84,7 +84,7 @@ export const profile: Profile = {
     availability: "Open for projects",
     summary:
       "Graphic designer focused on brand visuals, social creatives, and print systems that deliver clarity and impact.",
-    portrait: "/Profile.jpg",
+    portrait: "/prof.jpg",
   },
   socials: [
     {

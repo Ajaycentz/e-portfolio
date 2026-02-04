@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Work | Alden Jay Centino",
     description:
       "Browse branding, social media creatives, posters, print design, and digital systems.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 

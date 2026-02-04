@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Vivid Launch Identity | Alden Jay Centino",
     description: "Vivid Launch Identity gallery.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 

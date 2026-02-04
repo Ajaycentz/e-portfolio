@@ -6,6 +6,7 @@ import { CustomCursor } from "@/components/ui/CustomCursor";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PageTransition } from "@/components/layout/PageTransition";
+import { Analytics } from "@/components/layout/Analytics";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({
           <PageTransition>{children}</PageTransition>
           <Footer />
         </Providers>
+        <Analytics />
       </body>
     </html>
   );

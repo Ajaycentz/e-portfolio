@@ -68,6 +68,7 @@ export function ProjectCard({
             alt={project.title}
             width={900}
             height={700}
+            sizes="(min-width: 1024px) 560px, (min-width: 768px) 50vw, 100vw"
             className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Synthwave Event Flyers | Alden Jay Centino",
     description: "Synthwave Event Flyers gallery.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 

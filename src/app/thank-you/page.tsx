@@ -8,7 +8,7 @@ export const metadata = {
   openGraph: {
     title: "Thank you | Alden Jay Centino",
     description: "Your inquiry has been received.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 

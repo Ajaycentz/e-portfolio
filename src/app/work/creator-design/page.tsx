@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Creator Thumbnail Kit | Alden Jay Centino",
     description: "Creator Thumbnail Kit gallery.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Typography Studies | Alden Jay Centino",
     description: "Typography Studies project preview gallery.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 

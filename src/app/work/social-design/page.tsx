@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Pulse Social Kit | Alden Jay Centino",
     description: "Pulse Social Kit gallery.",
-    images: ["/Profile.jpg"],
+    images: ["/prof.jpg"],
   },
 };
 
