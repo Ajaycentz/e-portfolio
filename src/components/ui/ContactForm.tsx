@@ -50,7 +50,7 @@ export function ContactForm() {
     setStatus("loading");
     try {
       await emailjs.send(
-        "service_344014o",
+        "service_lbh6zsm",
         "template_3pmadpr",
         {
           from_name: form.name,
